@@ -1,5 +1,5 @@
 context:
-  version: "0.1.5"
+  version: "0.1.6"
 
 package:
   name: jupyterlab-commands-toolkit
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyterlab-commands-toolkit/jupyterlab_commands_toolkit-${{ version }}.tar.gz
-  sha256: de1cae480d676c289c4952d4a3535ecf91ca1b851c293707822f81098bd4b12e
+  sha256: e6f81a815e7247841ec875f9fa8c876a45fb13d38401589dd9dc3743e39beaea
 
 build:
   noarch: python
