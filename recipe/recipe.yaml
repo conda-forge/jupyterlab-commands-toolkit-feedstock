@@ -1,5 +1,5 @@
 context:
-  version: "0.2.0rc0"
+  version: "0.2.0rc1"
 
 package:
   name: jupyterlab-commands-toolkit
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyterlab-commands-toolkit/jupyterlab_commands_toolkit-${{ version }}.tar.gz
-  sha256: 39722066bbe545274183e06af8c08615d21d78f30fb101fdb23a52da6a234712
+  sha256: b16ccb5b8462d1398341c0a3750e557817cb82ae9b9ec6ea945e84adc1b55cd0
 
 build:
   noarch: python
@@ -25,7 +25,6 @@ requirements:
   run:
     - python >=${{ python_min }}
     - jupyter_server >=2.4.0,<3
-    - jupyterlab-eventlistener
 
 tests:
   - python:
