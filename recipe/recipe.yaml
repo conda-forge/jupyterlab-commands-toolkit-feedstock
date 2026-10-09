@@ -1,5 +1,5 @@
 context:
-  version: "0.3.0"
+  version: "0.3.1"
 
 package:
   name: jupyterlab-commands-toolkit
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jupyterlab-commands-toolkit/jupyterlab_commands_toolkit-${{ version }}.tar.gz
-  sha256: 7cba50f61067ffa29a1b40f8afa899bb5ea346b0cdae9f8d95db74c1edee6641
+  sha256: 99d147e7246ac4a9aac15ced0f8f51dca1e987442597e0053dc9a70181c05702
 
 build:
   noarch: python
@@ -19,8 +19,8 @@ requirements:
     - python ${{ python_min }}.*
     - pip
     - hatchling >=1.5.0
-    - jupyterlab >=4.0.0,<5
     - hatch-nodejs-version >=0.3.2
+    - jupyter-builder >=1.2.0,<2
     - hatch-jupyter-builder >=0.5
   run:
     - python >=${{ python_min }}
